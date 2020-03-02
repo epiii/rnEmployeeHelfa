@@ -9,7 +9,7 @@ class HomeScreen extends Component {
                 <View style={styles.menuRow}>
 
                     <TouchableOpacity
-                        onPress={() => this.props.navigation.navigate('Employee')}
+                        onPress={() => this.props.navigation.navigate('ListEmployee')}
                         // onPress={() => alert('all employees')}
                         style={styles.menuItem}
                     >
@@ -17,7 +17,31 @@ class HomeScreen extends Component {
                             <Text>icon</Text>
                         </View>
                         <View style={styles.menuItemTxt}>
-                            <Text>All Employees</Text>
+                            <Text>List</Text>
+                        </View>
+                    </TouchableOpacity>
+
+                    <TouchableOpacity
+                        onPress={() => this.props.navigation.navigate('SearchEmployee')}
+                        style={styles.menuItem}
+                    >
+                        <View style={styles.menuItemIcon}>
+                            <Text>icon</Text>
+                        </View>
+                        <View style={styles.menuItemTxt}>
+                            <Text>Search</Text>
+                        </View>
+                    </TouchableOpacity>
+
+                    <TouchableOpacity
+                        onPress={() => this.props.navigation.navigate('AddEmployee')}
+                        style={styles.menuItem}
+                    >
+                        <View style={styles.menuItemIcon}>
+                            <Text>icon</Text>
+                        </View>
+                        <View style={styles.menuItemTxt}>
+                            <Text>Add</Text>
                         </View>
                     </TouchableOpacity>
 
