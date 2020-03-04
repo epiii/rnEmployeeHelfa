@@ -128,6 +128,9 @@ android {
     }
 
     defaultConfig {
+        // camera 
+        missingDimensionStrategy 'react-native-camera', 'general' // <--- insert this line
+
         applicationId "com.rnhelfatest"
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
